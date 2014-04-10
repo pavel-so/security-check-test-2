@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.15'
+gem 'rails', '3.2.17'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,9 +10,12 @@ gem 'mysql2'
 
 gem 'rack-oauth2'
 gem 'cancan'
-gem 'sunspot_rails'
-gem 'sunspot_solr'
-gem 'rb-readline'
+gem 'sunspot_rails', '=2.0.0'
+gem 'sunspot_solr', '=2.0.0'
+gem 'rb-readline', '=0.4.2'
+gem 'nokogiri', ">= 1.6.1"
+gem 'acts_as_paranoid', '~> 0.4.2'
+gem 'acts_as_versioned', '3.2.2', :github => 'ilabsolutions/acts_as_versioned'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -31,7 +34,7 @@ gem 'rb-readline'
 #gem 'ruby-debug-base19x', '~> 0.11.30.pre4'
 #gem 'ruby-debug19'
 
-gem 'exception_notification', :require => 'exception_notifier'
+gem 'exception_notification'#, :require => 'exception_notifier'
 gem 'kaminari'
 group :development do
   gem "progress_bar"
